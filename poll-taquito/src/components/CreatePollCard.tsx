@@ -96,7 +96,7 @@ export default function CreatePollCard() {
 
   return (
     <Card sx={{ maxWidth: "40rem", margin: "3em auto" }}>
-      <CardHeader title="Create An Application" subheader="Start a new Application" />
+      <CardHeader subheader="Start a new Application" />
       <CardContent>
         <Formik
           initialValues={{ 
@@ -148,7 +148,7 @@ export default function CreatePollCard() {
                     component={FormikTextField}
                     name="title"
                     type="text"
-                    label="Applicant Name"
+                    label="name and surname or artist name"
                     fullWidth
                   />
                 </Grid>
@@ -158,43 +158,9 @@ export default function CreatePollCard() {
                     as="textarea"
                     label="Description"
                     fullWidth
-                    placeholder="Description"
+                    placeholder="short biography (max 120 words)"
                     style={{width: "100%", fontSize: '1em', padding: '0.5em', resize: 'vertical'}}
                   />
-                </Grid>
-                <Grid container item spacing={3}>
-                  <Grid item md>
-                    <Field
-                      label="Start Date"
-                      name="startDate"
-                      component={DatePicker}
-                      onChange={(value: any) => {
-                        setFieldValue("startDate", value);
-                      }}
-                      renderInput={(params: any) => (
-                        <TextField {...params} fullWidth />
-                      )}
-                      error={touched.startDate && Boolean(errors.startDate)}
-                      helperText={touched.startDate ? errors.startDate : ""}
-                      disablePast
-                    />
-                  </Grid>
-                  <Grid item md>
-                    <Field
-                      label="End Date"
-                      name="endDate"
-                      component={DatePicker}
-                      onChange={(value: any) => {
-                        setFieldValue("endDate", value);
-                      }}
-                      renderInput={(params: any) => (
-                        <TextField {...params} fullWidth />
-                      )}
-                      error={touched.endDate && Boolean(errors.endDate)}
-                      helperText={touched.endDate ? errors.endDate : ""}
-                      disablePast
-                    />
-                  </Grid>
                 </Grid>
                 <Grid container item spacing={3}>
                   <Grid item md>
@@ -207,15 +173,15 @@ export default function CreatePollCard() {
                         width: '100%'}}
                     >
                       <option value="">Select Category</option>
-                      <option value="1">Memeber Application</option>
+                      <option value="3">Member Application</option>
                     </Field>
                   </Grid>
                   <Grid item md>
                     <Field
                       component={FormikTextField}
-                      name="discourse"
+                      name="link"
                       type="text"
-                      label="Discourse Topic URL"
+                      label="website, twitter, instagram or NFT platform"
                       fullWidth
                     />
                   </Grid>
