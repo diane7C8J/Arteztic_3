@@ -39,6 +39,25 @@
   display: flex;
 }
 
+.appHeader-resources .faqstyle {
+  position: absolute;
+  left: 42.15%;
+  right: 55.42%;
+  top: 43.33%;
+  bottom: 37.5%;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125%;
+
+  /* identical to box height, or 22px */
+
+  /* Base Dark */
+  color: #111111;
+}
+
 .appHeader-resources a {
   margin-right: calc(var(--grid-unit) * 2);
   color: var(--gray-100);
