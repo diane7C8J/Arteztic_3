@@ -1,11 +1,12 @@
-@import 'assets/fonts/iosevka.css';
+/* @import 'assets/fonts/iosevka.css'; */
+@import 'assets/fonts/raleway.css';
 @import 'assets/styles/design-tokens.css';
 @import 'assets/styles/utility-classes.css';
 @import 'assets/styles/typography.css';
 
 body {
   margin: 0;
-  font-family: 'Iosevka Web', 'Courier New', monospace;
+  font-family: 'Raleway', 'sans-serif', monospace;
   line-height: var(--line-height-tight);
   font-size: var(--font-m);
   -webkit-font-smoothing: antialiased;
@@ -20,7 +21,7 @@ html {
 }
 
 code {
-  font-family: 'Iosevka Web', 'Courier New', monospace;
+  font-family: 'Raleway', 'sans-serif', monospace;
 }
 
 hr {

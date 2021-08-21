@@ -1,18 +1,6 @@
 {
-  "short_name": "H=N VOTE",
-  "name": "Hic Et Nunc Voting",
-  "icons": [
-      {
-          "src": "/android-chrome-192x192.png",
-          "sizes": "192x192",
-          "type": "image/png"
-      },
-      {
-          "src": "/android-chrome-384x384.png",
-          "sizes": "384x384",
-          "type": "image/png"
-      }
-  ],
+  "short_name": "ArTEZtic",
+  "name": "ArTEZtic Voting",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",

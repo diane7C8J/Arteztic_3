@@ -4,6 +4,7 @@ import '../assets/styles/design-tokens.css';
 import './header.css';
 
 import { ReactComponent as Logo } from '../assets/icons/hen-vote-logo.svg';
+import artezticlogo from './ARTEZTIC-logo.png';
 
 import { SyncMenu } from './SyncMenu';
 import { ProposalsNav } from './ProposalsNav';
@@ -62,7 +63,10 @@ export const Header = ({
       <nav className="appHeader-primaryNav">
         <section className="appHeader-primaryNav-left">
           <div className="appHeader-logo">
-            <Link to="/"><Logo/></Link>
+            <Link to="/">
+            <img src={artezticlogo} alt=""/>
+              {/* <Logo/> */}
+            </Link>
           </div>
           <nav className="appHeader-resources">
             <Link to="/about">About</Link>
